@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "services_items",
+  "info": {
+    "name": "services-items",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title_en": {
+      "type": "string"
+    },
+    "title_pt": {
+      "type": "string"
+    },
+    "paragraph_en": {
+      "type": "string"
+    },
+    "paragraph_pt": {
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

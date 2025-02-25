@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "herosliders",
+  "info": {
+    "name": "heroslider",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title_en": {
+      "type": "string"
+    },
+    "title_pt": {
+      "type": "string"
+    },
+    "subTitle_en": {
+      "type": "string"
+    },
+    "subTitle_pt": {
+      "type": "string"
+    },
+    "highlightedTitleText_pt": {
+      "type": "string"
+    },
+    "highlightedTitleText_en": {
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "bottomKeys": {
+      "type": "json"
+    }
+  }
+}

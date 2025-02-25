@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "clients_and_partners",
+  "info": {
+    "name": "clientsAndPartners",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title_en": {
+      "type": "text"
+    },
+    "title_pt": {
+      "type": "string"
+    },
+    "paragraph_en": {
+      "type": "string"
+    },
+    "paragraph_pt": {
+      "type": "string"
+    },
+    "heroImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

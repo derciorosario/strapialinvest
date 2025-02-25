@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_items",
+  "info": {
+    "name": "product-items"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title_en": {
+      "type": "string"
+    },
+    "title_pt": {
+      "type": "string"
+    },
+    "paragraph_pt": {
+      "type": "string"
+    },
+    "paragraph_en": {
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "about_items",
+  "info": {
+    "name": "aboutItems"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "title_en": {
+      "type": "string"
+    },
+    "title_pt": {
+      "type": "string"
+    },
+    "paragraph_en": {
+      "type": "string"
+    },
+    "paragraph_pt": {
+      "type": "string"
+    }
+  }
+}

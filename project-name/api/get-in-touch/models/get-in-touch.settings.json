@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "get_in_touches",
+  "info": {
+    "name": "get-in-touch"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title_en": {
+      "type": "string"
+    },
+    "title_pt": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "number": {
+      "type": "biginteger"
+    },
+    "btnText_en": {
+      "type": "string"
+    },
+    "btnText_pt": {
+      "type": "string"
+    },
+    "btnLink": {
+      "type": "string"
+    }
+  }
+}

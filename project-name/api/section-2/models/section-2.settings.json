@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "section_2s",
+  "info": {
+    "name": "section-2"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "box1": {
+      "type": "json"
+    },
+    "box2": {
+      "type": "json"
+    },
+    "box3": {
+      "type": "json"
+    },
+    "box2BackgroundImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "box3BackgroundImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

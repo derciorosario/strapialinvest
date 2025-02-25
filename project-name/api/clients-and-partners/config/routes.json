@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/clients-and-partners",
+      "handler": "clients-and-partners.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/clients-and-partners/count",
+      "handler": "clients-and-partners.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/clients-and-partners/:id",
+      "handler": "clients-and-partners.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/clients-and-partners",
+      "handler": "clients-and-partners.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/clients-and-partners/:id",
+      "handler": "clients-and-partners.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/clients-and-partners/:id",
+      "handler": "clients-and-partners.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

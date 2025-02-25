@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "footers",
+  "info": {
+    "name": "footer",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "column1": {
+      "type": "json"
+    },
+    "column2": {
+      "type": "json"
+    },
+    "column3": {
+      "type": "json"
+    },
+    "bottomItems": {
+      "type": "json"
+    },
+    "socialMedia": {
+      "type": "json"
+    },
+    "column4": {
+      "type": "json"
+    }
+  }
+}

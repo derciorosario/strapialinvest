@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "section_4s",
+  "info": {
+    "name": "section-4"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "numberCount": {
+      "type": "biginteger"
+    },
+    "backgroud": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

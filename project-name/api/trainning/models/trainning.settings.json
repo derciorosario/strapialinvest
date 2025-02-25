@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "trainnings",
+  "info": {
+    "name": "trainning",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title_en": {
+      "type": "string"
+    },
+    "title_pt": {
+      "type": "string"
+    },
+    "label_en": {
+      "type": "string"
+    },
+    "label_pt": {
+      "type": "string"
+    },
+    "btnText_en": {
+      "type": "string"
+    },
+    "btnText_pt": {
+      "type": "string"
+    },
+    "btnLink": {
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "longText_en": {
+      "type": "text"
+    },
+    "longText_pt": {
+      "type": "text"
+    }
+  }
+}

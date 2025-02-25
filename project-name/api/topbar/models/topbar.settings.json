@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "topbars",
+  "info": {
+    "name": "topbar"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "mainText_en": {
+      "type": "string"
+    },
+    "mainText_pt": {
+      "type": "string"
+    },
+    "time_en": {
+      "type": "string"
+    },
+    "time_pt": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "section_5s",
+  "info": {
+    "name": "section-5",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title_en": {
+      "type": "string"
+    },
+    "title_pt": {
+      "type": "string"
+    },
+    "paragraph_en": {
+      "type": "string"
+    },
+    "btnText_en": {
+      "type": "string"
+    },
+    "btnText_pt": {
+      "type": "string"
+    },
+    "btnLink": {
+      "type": "string"
+    },
+    "youtubeVideoLink": {
+      "type": "string"
+    },
+    "paragraph_pt": {
+      "type": "string"
+    },
+    "rightImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

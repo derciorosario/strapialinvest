@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "section_7s",
+  "info": {
+    "name": "section-7",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "leftImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "title_en": {
+      "type": "string"
+    },
+    "title_pt": {
+      "type": "string"
+    }
+  }
+}
